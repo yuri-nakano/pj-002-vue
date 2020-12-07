@@ -9,10 +9,11 @@ continueボタンの押下時にモーダルが開きます。
 continueボタンの押下時
 ![image](https://user-images.githubusercontent.com/64944011/99899513-4582bf80-2ced-11eb-8ca2-1d6f3cbaa329.png)
 iphone Xサイズ
+
 ![image](https://user-images.githubusercontent.com/64944011/101308932-63742680-388e-11eb-9567-096c6dccb674.png)
-![image](https://user-images.githubusercontent.com/64944011/99899513-4582bf80-2ced-11eb-8ca2-1d6f3cbaa329.png)
 ## rawフォルダー作成画面キャプキャ
 ![image](https://user-images.githubusercontent.com/64944011/101308785-037d8000-388e-11eb-8cb4-e55354f858ed.png)
+continueボタンの押下時
 ![image](https://user-images.githubusercontent.com/64944011/101308782-00828f80-388e-11eb-8f02-4a9a32619b88.png)
 
 
