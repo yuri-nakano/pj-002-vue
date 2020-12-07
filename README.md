@@ -43,11 +43,10 @@ https://qiita.com/sansaisoba/items/242a8ba95bf70ba179d3
 ## VueCLI
 1. `vue create pj-002-cli` とし、`Manually select features`でマニュアル設定を以下のように行う。Babel、Router、CSS Pre-processors、Linter / Formatterを選択
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d202b51e-b02b-48a1-bf8c-bf11872f2a8f/vue_create.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d202b51e-b02b-48a1-bf8c-bf11872f2a8f/vue_create.png)
+![image](https://user-images.githubusercontent.com/64944011/101312432-12b4fb80-3897-11eb-9729-bb268dc07508.png)
+![image](https://user-images.githubusercontent.com/64944011/101312441-16488280-3897-11eb-9e71-3a941841c70e.png)
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4bd410a7-6519-4082-bd94-4c387ce722e1/cli2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4bd410a7-6519-4082-bd94-4c387ce722e1/cli2.png)
-
-    設定詳細はこの画像のように設定してください。最後の`save this as a preset for future projects?`はNoで大丈夫です。
+設定詳細はこの画像のように設定してください。最後の`save this as a preset for future projects?`はNoで大丈夫です。
 
 ## Vuetify
 
@@ -64,18 +63,12 @@ npm install sass-loader node-sass
 
 # Usage
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
 ```bash
 git clone https://github.com/yuri-nakano/pj-002-vue.git
 cd pj-002-cli
 npm i
 npm run serve
 ```
- 
-# Note
- 
-注意点などがあれば書く
  
 # Author
  
