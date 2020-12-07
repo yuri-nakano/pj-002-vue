@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pj002</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        margin: auto;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../raw/img/background.jpg");
+      }
+
+      .container {
+        height: 100%;
+        width: 100%;
+        background: 0% 0% cover padding-box;
+        background-color: rgba(0, 0, 0, 0.85);
+      }
+
+      .menu {
+        width: 78px;
+        height: 78px;
+        float: right;
+        margin-top: 44px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 36px;
+      }
+
+      .wolf {
+        float: left;
+        width: 80px;
+        height: 100px;
+        padding-top: 24px;
+        padding-left: 24px;
+      }
+
+      .fa-bars {
+        color: #4492cb;
+        margin-top: 26px;
+        margin-left: 26px;
+      }
+
+      .fa-large {
+        font-size: 28px;
+      }
+
+      .button {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "Bebas Neue", cursive;
+        width: 278px;
+        height: 55px;
+        letter-spacing: 1.6px;
+        border: 1px solid #ffffff;
+        text-align: center;
+        padding-top: 40px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+      }
+
+      .button-mark {
+        color: #ffffff;
+        float: right;
+        padding-right: 30px;
+        padding-bottom: 40px;
+      }
+
+      .footer-logo {
+        font-size: 11px;
+        float: right;
+        color: #ffffff;
+        letter-spacing: 0.88px;
+        font-family: "Noto Sans JP", sans-serif;
+        position: absolute;
+        bottom: 40px;
+        right: 5%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="main">
+        <div class="container">
+          <top-mark></top-mark>
+          <menu-mark></menu-mark>
+
+          <alert-box></alert-box>
+
+          <footer-logo-mark></footer-logo-mark>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      Vue.component("top-mark", {
+        template: `
+        <div class="top">
+          <img
+            src="../raw/img/mark.png"
+            alt=""
+            class="wolf"
+          />
+        </div>`,
+      });
+      Vue.component("menu-mark", {
+        template: `
+        <div class="menu">
+          <i class="fas fa-bars fa-large"></i>
+        </div>
+        `,
+      });
+      Vue.component("alert-box", {
+        template: `
+        <div class="alert" v-on:click="caution">
+          <p class="button">
+            <strong>continue
+              <span class="button-mark">
+                <i class="fas fa-angle-right"></i>
+              </span>
+            </strong> 
+          </p>
+        <slot></slot>
+        </div>
+        `,
+        methods: {
+          caution: function () {
+            alert("コンティニューボタンが押されました");
+          },
+        },
+      });
+      Vue.component("footer-logo-mark", {
+        template: ` 
+        <p class="footer-logo">Copyright © 2020 sample Co.</p>
+        `,
+      });
+      var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+      });
+    </script>
+  </body>
+</html>
