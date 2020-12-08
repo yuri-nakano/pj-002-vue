@@ -1,6 +1,8 @@
 # pj-002-vue
 pj-001-html(https://github.com/yuri-nakano/pj-001-html) で作成した画面をVueを使って作成しました。
 rawフォルダーには手動作成したフォルダ、pj-002-cliにはVueCLIで作成したフォルダーが入っています。
+
+各パーツごとにコンポーネント化されています。
  
 # DEMO
 
